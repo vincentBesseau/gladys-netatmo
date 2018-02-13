@@ -6,6 +6,13 @@ module.exports = function(sails) {
 	const uninstall = require('./lib/uninstall')
 	const commands = require('./lib/commands/index')
 	const command = require('./lib/commands/command')
+
+	gladys.on('ready', function() {
+		setInterval(function () {
+				sails.log.info('Update Netatmo data !')
+				commands.updateData()
+			}, 30*60000)
+	})
  
     return {
 		install: install,
