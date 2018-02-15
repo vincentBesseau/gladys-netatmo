@@ -8,8 +8,6 @@ module.exports = function(sails) {
 	const command = require('./lib/commands/command')
 
 	gladys.on('ready', function() {
-		var defaultInterval = 30
-		var interval = defaultInterval
 		gladys.param.getValue('NETATMO_INTERVAL_UPDATE')
 	    .then((intervalUser) => {
 	        return intervalUser;
