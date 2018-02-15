@@ -10,11 +10,10 @@
   * NETATMO_CLIENT_SECRET => value on Netatmo app
   * NETATMO_USERNAME => value used when you have create your account
   * NETATMO_PASSWORD => value used when you have create your account
+* This step is optionnal :
+  * Create this parameter on Gladys to change the default value (30 min) of Netatmo data update :
+    * NETATMO_INTERVAL_UPDATE => value must be on minute format
 * Restart Gladys
-* When Gladys was restart :
-  * Create script with this command line ```gladys.modules.netatmo.commands.updateData()```
-  * Create a cron Task with this parameters : ```0 0,30 * * * *```
-  * Create a scenario with your new alarm as trigger and your new script on action
 
 ## Usage 
 
@@ -56,12 +55,6 @@ gladys.modules.{slugName}.commands.max();
 Change to away mode your thermostat for defined time :
 ```
 gladys.modules.{slugName}.commands.away(TIMESTAMP);
-```
-
-
-Update netatmo data on Gladys :
-```
-gladys.modules.{slugName}.commands.updateData();
 ```
 
 ### With your voice or telegram
