@@ -72,7 +72,7 @@ netatmo.off
 
 You can add an information of time as :
 ```
-Je rentre dans 20 min
+Met le thermostat en mode absent pour 20 minutes
 ```
 the thermostat will pas to away mode for 20 minutes
 
