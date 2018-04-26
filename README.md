@@ -72,5 +72,5 @@ Je rentre dans 20 min
 ```
 the thermostat will pas to away mode for 20 minutes
 
-### With the box
-![alt Box](https://github.com/vincentBesseau/gladys-netatmo/blob/master/medias/Capture%20d’écran%202018-01-30%20à%2016.27.47.png?raw=true)
+<!--### With the box
+![alt Box](https://github.com/vincentBesseau/gladys-netatmo/blob/master/medias/Capture%20d’écran%202018-01-30%20à%2016.27.47.png?raw=true)-->
