@@ -61,9 +61,13 @@ gladys.modules.{slugName}.commands.away(TIMESTAMP);
 
 * Launch brain training
 
-Change to away mode your thermostat with this new label :
+Change to away mode your thermostat with these news labels :
 ```
 netatmo.go-Away
+netatmo.program
+netatmo.hg
+netatmo.max
+netatmo.off
 ```
 
 You can add an information of time as :
