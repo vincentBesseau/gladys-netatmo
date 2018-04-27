@@ -18,14 +18,14 @@ module.exports = function(sails) {
 	    })
 	    .then((interval) => {
 			setInterval(function () {
-				sails.log.info('Update Netatmo data !')
-				commands.updateData()
 				gladys.house.get().then((houses) => {
 					gladys.mode.getByHouse({id:houses[0].id}).then((mode) => {
 						sails.log.info('Check home mode !')
-						checkMode(mode)
+						checkMode(mode.value)
 					})
 				})
+				sails.log.info('Update Netatmo data !')
+				commands.updateData()
 			}, interval*60000)
 	    })
 	})
